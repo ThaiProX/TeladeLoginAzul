@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ===== ICONS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Login & Registro</title>
+    
+</head>
+<body>
+        <div class="container">
+            <div class="forms">
+                <!-- ===== Entrar Form ===== -->
+                <div class="form login">
+                
+                    <span class="title">Entrar</span>
+                        <form action="#">
+                            <div class="input-box">
+                                <input type="text" placeholder="Nome de Usuário" autocomplete="off" required>
+                                <i class="uil uil-user"></i>
+                            </div>
+
+                            <div class="input-box">
+                                <input type="password" class="password" placeholder="Senha" autocomplete="off" required>
+                                <i class="uil uil-lock icon"></i>
+                                <i class="uil uil-eye-slash showHidePw"></i>
+                            </div>
+
+                            <div class="checkbox-text">
+                                <div class="checkbox-content">
+                                    <input type="checkbox" id="logCheck">
+                                    <label for="logCheck" class="text">Lembre-me</label>
+                                </div>
+
+                                <a href="#" class="text forgot-password-email-link">Esqueci minha senha</a>
+                            </div>
+
+                            <div class="input-box button">
+                                <button class="createAccountButton">Entrar</button>
+                                <input type="button" value="Entrar">
+                            </div>
+                        </form>
+
+                        <div class="login-signup">
+                            <span class="text">Ainda não tem conta?
+                                <a href="#" class="text signup-link">Cadastre-se</a>
+                            </span>
+                        </div>
+
+                        <div class="login-signup">
+                                <a href="#" class="text signup-link">Ajuda</a>
+                            </span>
+                            <i class="uil uil-question-circle icon"></i>
+                        </div>
+
+                    </div>
+
+            <!-- ===== Cadastro Form ===== -->
+                <div class="form signup">
+                    <span class="title">Cadastro</span>
+                
+                        <form action="#">
+                            <div class="input-box">
+                                <input type="text" id="username" placeholder="Nome de Usuário" required>
+                                <i class="uil uil-user"></i>
+                            </div>
+
+                            <div class="input-box">
+                                <input type="tel" id="phone" placeholder="Telefone (00)*****-****" required>
+                                <i class="uil uil-phone icon"></i>
+                            </div>             
+
+                            <div class="input-box">
+                                <input type="text" id="email" placeholder="Email" required>
+                                <i class="uil uil-envelope icon"></i>
+                            </div>
+
+                            <div class="input-box">
+                                <input type="password" class="password" placeholder="Senha" required>
+                                <i class="uil uil-lock icon"></i>
+                            </div>
+
+                            <div class="input-box">
+                                <input type="password" class="password" placeholder="Confirme sua Senha" required>
+                                <i class="uil uil-lock icon"></i>
+                                <i class="uil uil-eye-slash showHidePw"></i>
+                            </div>
+
+                            <div class="checkbox-text">
+                                <div class="checkbox-content">
+                                    <input type="checkbox" id="termCon">
+                                    <label for="termCon" class="text">Eu concordo com todos os <a href="#" class="text termsOfUse">Termos de Uso</a> e <a href="#" class="text privacyPolicy">Política de Privacidade</a>.</label>
+                                </div>
+                            </div>
+
+                            <div class="input-box button">
+                                <button id="createAccountButton">Criar</button>
+                            </div>
+                        </form>
+
+                        <div class="login-signup">
+                            <span class="text">Já possui uma conta?
+                                <a href="#" class="text login-link">Entrar</a>
+                            </span>
+                        </div>
+                    </div>
+
+            <!-- ===== Redefinição de Senha (email) Form ===== -->
+                    <div class="form forgotPasswordEmail">
+                        
+                        <div class="back-to-login">
+                            <a href="#" class="text back-to-login1-link">&larr; Voltar ao Login</a>
+                        </div>
+                        
+                        <span class="title">Redefinição de Senha</span>
+
+                            <p><strong>
+                                    Digite o seu e-mail no campo abaixo e lhe   
+                                    enviaremos um código de ativação para 
+                                    redefinição da senha.
+                            </strong></p>
+
+                        <form action="#">
+                            <div class="input-box">
+                                <input type="text" placeholder="Seu Email" autocomplete="off" required>
+                                <i class="uil uil-envelope icon"></i>
+                            </div>
+
+                            <div class="input-box button">
+                                <button id="sendCodeButton1">Enviar código</button>
+                            </div>
+
+                            <div class="forgotPassword">
+                                <span class="text">Email não enviado?
+                                    <a href="#" class="text forgot-password-phone-link">Tentar de outra forma</a>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+
+            <!-- ===== Redefinição de Senha (phone) Form  ===== -->
+            <div class="form forgotPasswordPhone">
+                        
+                <div class="back-to-login">
+                    <a href="#" class="text back-to-login2-link">&larr; Voltar ao Login</a>
+                </div>
+                
+                <span class="title">Redefinição de Senha</span>
+
+                    <p><strong>
+                            Digite o seu telefone no campo abaixo e lhe   
+                            enviaremos um código de ativação para 
+                            redefinição da senha.
+                    </strong></p>
+
+                <form action="#">
+                    <div class="input-box">
+                        <input type="tel" placeholder="Seu Telefone" autocomplete="off" required>
+                        <i class="uil uil-phone icon"></i>
+                    </div>
+
+                    <div class="input-box button">
+                        <button id="sendCodeButton2">Enviar código</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- ===== Redefinição de Senha NEW Form  ===== -->
+                    <div class="form forgotPasswordNew">
+
+                        <div class="forgotPassword">
+                            <span class="text">Email não enviado?
+                                <a href="#" class="text back-to-email-link">Voltar</a>
+                            </span>
+                        </div>
+
+                        <span class="title">Redefinição de Senha</span>
+
+                            <p><strong>
+                                Por favor, Insira no campo abaixo o código de ativação que você recebeu e redefina sua senha.
+                            </strong></p>
+
+                        <form action="#">
+                            <div class="input-box">
+                                <input type="text" placeholder="Código de ativação" autocomplete="off" required>
+                                <i class="uil uil-shield-check"></i>
+                            </div>
+
+                            <div class="input-box">
+                                <input type="password" class="password" placeholder="Nova senha" autocomplete="off" required>
+                                <i class="uil uil-lock icon"></i>
+                            </div>
+
+                            <div class="input-box">
+                                <input type="password" class="password" placeholder="Repita a nova senha" autocomplete="off" required>
+                                <i class="uil uil-lock icon"></i>
+                                <i class="uil uil-eye-slash showHidePw"></i>
+                            </div>
+
+                            <div class="input-box button">
+                                <button id="reset">Redefinir</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        <!-- ===== JAVASCRIPT ===== -->
+        <script src="script.js"></script>
+</body>
+</html>
